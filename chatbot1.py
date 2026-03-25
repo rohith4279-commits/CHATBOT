@@ -6,7 +6,7 @@ st.set_page_config(page_title="AI Chatbot", page_icon="🤖")
 
 st.title("🤖 AI Chatbot")
 
-API_KEY = os.getenv("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")
+API_KEY = os.getenv("API_KEY")
 
 # Initialize chat history
 if "messages" not in st.session_state:
