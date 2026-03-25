@@ -6,7 +6,7 @@ st.set_page_config(page_title="AI Chatbot", page_icon="🤖")
 
 st.title("🤖 AI Chatbot")
 
-API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -61,4 +61,3 @@ if user_input:
     # Save bot reply
     st.session_state.messages.append({"role": "assistant", "content": reply})
 
-port=int(os.environ.get("PORT",8501))
